@@ -35,8 +35,8 @@ end
 
 class Pydoop < Formula
   homepage 'http://http://pydoop.sourceforge.net/'
-  url 'http://sourceforge.net/projects/pydoop/files/Pydoop-0.8/pydoop-0.8.1.tar.gz'
-  sha1 '9ef27551b1a16ef0454b903306cf05408ca91e7c'
+  url 'http://sourceforge.net/projects/pydoop/files/Pydoop-0.9/pydoop-0.9.1.tar.gz'
+  sha1 'bd26426c49a293196d6ef20c751d2d18c0c7feea'
 
   depends_on JdkInstalled.new
   depends_on JavaHome.new
