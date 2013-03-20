@@ -50,7 +50,9 @@ class Pydoop < Formula
       ohai "HADOOP_HOME is not set.  Using brew version"
       ENV.append 'HADOOP_HOME', Formula.factory('hadoop').libexec
     end
-    ENV.append 'BOOST_PYTHON', 'boost_python-mt'
+    unless(ENV["BOOST_PYTHON"])
+      ENV['BOOST_PYTHON'] = 'boost_python-mt'
+    end
     system 'python', 'setup.py', 'build'
 
     # In order to install into the Cellar, the dir must exist and be in the
